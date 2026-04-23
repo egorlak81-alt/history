@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мануфактуры Беларуси</title>
+    <style>
+        :root {
+            --bg-color: #fff0f5;
+            --main-pink: #ff69b4;
+            --dark-pink: #c71585;
+            --card-bg: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: #444;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 0;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(255, 105, 180, 0.2);
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            color: var(--dark-pink);
+            margin: 0;
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .subtitle {
+            color: var(--main-pink);
+            font-weight: bold;
+        }
+
+        .card {
+            background: var(--card-bg);
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            border-left: 8px solid var(--main-pink);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        h2 {
+            color: var(--dark-pink);
+            margin-top: 0;
+            border-bottom: 2px solid var(--bg-color);
+            padding-bottom: 10px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        li::before {
+            content: '🌸';
+            position: absolute;
+            left: 0;
+        }
+
+        .highlight {
+            background: #ffe4e1;
+            padding: 2px 5px;
+            border-radius: 4px;
+            font-weight: bold;
+            color: var(--dark-pink);
+        }
+
+        footer {
+            text-align: center;
+            font-size: 0.9rem;
+            color: var(--main-pink);
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Мануфактуры</h1>
+        <p class="subtitle">Экономический взлет белорусских земель XVIII в.</p>
+    </header>
+
+    <div class="card">
+        <h2>🌸 Суть явления</h2>
+        <p>Переход от мелких мастерских к крупному производству. <span class="highlight">Ручной труд + Разделение операций</span>. Начало формирования капиталистических отношений.</p>
+    </div>
+
+    <div class="card">
+        <h2>👑 Главные меценаты</h2>
+        <ul>
+            <li><strong>Радзивиллы:</strong> Анна Екатерина, Михаил Казимир «Рыбонька». Основали более 20 мануфактур.</li>
+            <li><strong>Сапеги:</strong> Центр в Ружанах.</li>
+            <li><strong>Огинские:</strong> Телеханы.</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>💎 Топ-3 производства</h2>
+        <ul>
+            <li><span class="highlight">Налибоки:</span> Изысканное стекло и хрусталь.</li>
+            <li><span class="highlight">Уречье:</span> Первые в стране зеркала мирового уровня.</li>
+            <li><span class="highlight">Слуцк:</span> Знаменитые Слуцкие пояса («персиярня»).</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>⚙️ Наши особенности</h2>
+        <ul>
+            <li>Труд <span class="highlight">крепостных крестьян</span> вместо наемных рабочих.</li>
+            <li>Ориентация на <span class="highlight">предметы роскоши</span> для магнатов.</li>
+            <li>Трудности конкуренции с западным импортом из-за высокой цены.</li>
+        </ul>
+    </div>
+<footer>
+        Конспект для быстрого повторения &copy; 2026
+    </footer>
+</div>
+
+</body>
+</html>
